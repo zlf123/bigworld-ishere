@@ -1,4 +1,4 @@
-package org.agtsys.util;
+package org.agentsystem.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
