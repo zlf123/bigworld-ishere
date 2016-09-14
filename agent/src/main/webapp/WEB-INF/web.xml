@@ -4,4 +4,21 @@
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 				xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd ">
 				
+				<javaee:context-param>
+				 	<javaee:param-name>contextConfigLocation</javaee:param-name>
+				 	<javaee:param-value>classpath:spring-maybis.xml</javaee:param-value>
+				</javaee:context-param>
+				<javaee:listener>
+					<javaee:listener-class>sun.org.mozilla.javascript.internal.ContextListener </javaee:listener-class>
+				</javaee:listener>
+				
+				<javaee:servlet>
+					<javaee:servlet-name>springmvc</javaee:servlet-name>
+					<javaee:servlet-class></javaee:servlet-class>
+				</javaee:servlet>
+				<javaee:servlet-mapping>
+						<javaee:servlet-name>springmvc</javaee:servlet-name>
+						<javaee:url-pattern>/</javaee:url-pattern>
+				</javaee:servlet-mapping>
+				
 </javaee:web-app>
